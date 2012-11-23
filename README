@@ -1,0 +1,4 @@
+Kernel developing and debugging.
+
+make run:   run testing system
+make debug: run debugging system(kgdb)
