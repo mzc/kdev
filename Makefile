@@ -1,5 +1,6 @@
 REPO := $(HOME)/repo
 LINUX := $(REPO)/linux
+BZIMAGE := $(LINUX)/arch/x86/boot/bzImage
 
 default: kernel.img rootfs.img
 
@@ -14,7 +15,7 @@ clean:
 	rm -f kernel.img rootfs.img
 
 kernel.img:
-	cp $(LINUX)/arch/x86/boot/bzImage $@
+	cp $(BZIMAGE) $@
 
 rootfs.img:
 	mkrootfs $@
